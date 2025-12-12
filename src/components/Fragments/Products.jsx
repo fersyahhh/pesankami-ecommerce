@@ -83,7 +83,7 @@ const CardProduct = ({
 };
 
 const Products = () => {
-  const { products } = useProducts();
+  const { products, loading } = useProducts();
   const { categories, selected } = useCategories();
   const { query } = useSearch();
   const { user, setShowAuth } = useAuth();
@@ -115,8 +115,8 @@ const Products = () => {
             />
           ))}
         </div>
-      ) : products == "" ? (
-        <div className="w-8 h-8 rounded-full border-4 mt-30 border-gray-300 border-t-transparent animate-spin mx-auto"></div>
+      ) : loading ? (
+        <div className="mx-auto mt-20 h-8 w-8 animate-spin rounded-full border-4 border-gray-300 border-t-transparent"></div>
       ) : (
         <p className="mt-8 text-center text-sm text-slate-700">
           Produk tidak di temukan
