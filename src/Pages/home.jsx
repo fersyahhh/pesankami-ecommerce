@@ -1,3 +1,4 @@
+import Footer from "../components/Layout/Footer";
 import HeroSection from "../components/Layout/HeroSection";
 import Navbar from "../components/Layout/Navbar";
 
@@ -6,6 +7,7 @@ const HomePage = () => {
     <div>
       <Navbar />
       <HeroSection />
+      <Footer />
     </div>
   );
 };

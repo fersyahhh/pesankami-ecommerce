@@ -32,7 +32,7 @@ const IconNavbar = () => {
   }, [addCart]);
 
   return (
-    <div className="flex items-center gap-5 text-white">
+    <div className={`flex items-center ${user ? "gap-3" : "gap-5"} text-white`}>
       <div className="mt-1.5">
         {user ? (
           <button

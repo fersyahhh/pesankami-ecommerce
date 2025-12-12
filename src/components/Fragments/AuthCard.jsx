@@ -15,9 +15,32 @@ import { useEffect } from "react";
 const AuthCard = () => {
   const { showAuth, setShowAuth, user, setUser } = useAuth();
 
+  // Function handle login via google
   async function handleLoginGoogle() {
     try {
       const userData = await loginWithGoogle(); // panggil function
+      console.log("DATA USER:", userData);
+      setUser(userData); // tampilkan hasil user
+    } catch (err) {
+      console.error(err);
+    }
+  }
+
+  // Function handle login via facebook
+  async function handleLoginFacebook() {
+    try {
+      const userData = await loginWithFacebook(); // panggil function
+      console.log("DATA USER:", userData);
+      setUser(userData); // tampilkan hasil user
+    } catch (err) {
+      console.error(err);
+    }
+  }
+
+  // Function handle login via twitter
+  async function handleLoginTwitter() {
+    try {
+      const userData = await loginWithTwitter(); // panggil function
       console.log("DATA USER:", userData);
       setUser(userData); // tampilkan hasil user
     } catch (err) {
@@ -65,12 +88,12 @@ const AuthCard = () => {
               textBtn={"Masuk dengan Google"}
             />
             <ButtonLogin
-              onClick={loginWithFacebook}
+              onClick={handleLoginFacebook}
               iconBtn={iconFacebook}
               textBtn={"Masuk dengan Facebook"}
             />
             <ButtonLogin
-              onClick={loginWithTwitter}
+              onClick={handleLoginTwitter}
               textBtn={"Masuk dengan X (Twitter)"}
               iconBtn={iconTwitter}
             />
