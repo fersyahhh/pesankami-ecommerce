@@ -115,6 +115,8 @@ const Products = () => {
             />
           ))}
         </div>
+      ) : products == "" ? (
+        <div className="w-8 h-8 rounded-full border-4 mt-30 border-gray-300 border-t-transparent animate-spin mx-auto"></div>
       ) : (
         <p className="mt-8 text-center text-sm text-slate-700">
           Produk tidak di temukan
