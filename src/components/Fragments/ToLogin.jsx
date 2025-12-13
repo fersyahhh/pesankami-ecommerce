@@ -14,7 +14,7 @@ const ToLogin = () => {
         <div>
           <h1 className="font-bold">Hai, {user ? user.name : "Guys"}</h1>
           <p className="text-sm">
-            {user ? "Silahkan menikmati" : "Akses semua fitur, yuk-"}
+            {user ? "Silahkan berbelanja" : "Akses semua fitur, yuk-"}
           </p>
         </div>
       </div>
