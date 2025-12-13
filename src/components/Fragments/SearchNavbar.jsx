@@ -6,7 +6,7 @@ const SearchNavbar = () => {
 
   return (
     <div>
-      <div className="relative flex h-10 w-54 items-center gap-3 rounded-lg border border-black/30 bg-white px-2">
+      <div className="relative flex h-10 w-54 md:w-72 items-center gap-3 rounded-lg border border-black/30 bg-white px-2">
         <div className="absolute top-1/2 -translate-y-1/2 text-gray-600/70">
           <Search size={20} />
         </div>

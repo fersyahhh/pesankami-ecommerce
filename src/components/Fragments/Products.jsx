@@ -96,9 +96,9 @@ const Products = () => {
   );
 
   return (
-    <div className="mt-5 pb-4">
+    <div className="mt-5 pb-4 md:w-[90%] md:mt-15 md:mx-auto">
       {filteredProducts.length > 0 ? (
-        <div className="grid w-full grid-cols-2 gap-4 px-4">
+        <div className="grid w-full grid-cols-2 lg:grid-cols-3 lg:gap-6 gap-4 px-4">
           {filteredProducts.map((item) => (
             <CardProduct
               key={item.id}

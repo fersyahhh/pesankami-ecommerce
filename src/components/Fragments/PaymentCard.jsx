@@ -61,6 +61,9 @@ const PaymentCard = () => {
     setShowPayment(false);
     setPaymentProofPreview(null);
     setShowModal(true);
+    setTimeout(() => {
+      setShowModal(false)
+    }, 1500);
   }
 
   return (
@@ -71,7 +74,7 @@ const PaymentCard = () => {
         className={`fixed inset-0 z-80 h-screen w-full bg-black/50 transition-all duration-300 ease-in-out`}
       ></div>
 
-      <div className="hide-scrollbar fixed top-3 left-1/2 z-9999 max-h-[95vh] w-[80%] -translate-x-1/2 overflow-y-auto rounded-lg bg-white px-4 pt-5 text-center">
+      <div className="hide-scrollbar fixed top-3 left-1/2 z-9999 max-h-[95vh] w-[80%] md:w-[60%] xl:w-[30%] -translate-x-1/2 overflow-y-auto rounded-lg bg-white px-4 pt-5 text-center">
         {/* Payment Header */}
         <div>
           <h1 className="text-xl font-bold">Pembayaran</h1>

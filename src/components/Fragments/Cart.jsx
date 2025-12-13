@@ -73,7 +73,7 @@ const Cart = () => {
       ></div>
 
       <div
-        className={`fixed top-0 right-0 z-99999 flex flex-col overflow-hidden ${showCart ? "translate-x-0" : "translate-x-full"} top-0 right-0 z-999 h-screen max-h-screen w-[80%] bg-white`}
+        className={`fixed top-0 right-0 z-99999 flex flex-col overflow-hidden ${showCart ? "translate-x-0" : "translate-x-full"} top-0 right-0 z-999 h-screen max-h-screen w-[80%] xl:w-[30%] md:w-[50%] bg-white`}
       >
         {/* Header Cart */}
         <div className="flex w-full justify-between bg-blue-500 p-3 text-white">

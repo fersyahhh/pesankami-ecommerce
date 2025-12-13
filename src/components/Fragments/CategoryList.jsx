@@ -6,7 +6,7 @@ const CategoryCard = ({ icon, category, isSelected, onClick }) => {
   return (
     <div
       onClick={onClick}
-      className={`mt-3 flex flex-col items-center gap-3 transition-all duration-150 ease-in-out ${isSelected ? "-translate-y-1" : ""}`}
+      className={`mt-3 flex flex-col md:minw-[72px] md:mt-1 items-center gap-3 transition-all duration-150 ease-in-out ${isSelected ? "-translate-y-1" : ""}`}
     >
       <div
         className={`flex h-12 w-12 items-center justify-center rounded-full bg-blue-400 text-white`}
@@ -40,7 +40,7 @@ const CategoryList = () => {
   }
 
   return (
-    <div className="hide-scrollbar mt-3 flex w-full gap-7 overflow-x-auto px-4">
+    <div className="hide-scrollbar mt-3 md:hidden flex w-full gap-7 overflow-x-auto px-4">
       {categories.map((item) => (
         <CategoryCard
           key={item.id}

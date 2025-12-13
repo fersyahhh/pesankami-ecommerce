@@ -63,8 +63,9 @@ const AuthCard = () => {
         onClick={() => setShowAuth(false)}
         className={`fixed inset-0 z-80 h-screen w-full bg-black/50 transition-all duration-300 ease-in-out`}
       ></div>
+
       <div
-        className={`fixed top-15 left-1/2 z-999 max-h-[90vh] w-[85%] -translate-x-1/2 overflow-y-auto rounded-xl bg-slate-50 px-8 pb-6 transition-all duration-500 ease-in-out ${showAuth ? "translate-y-0" : "translate-y-4"}`}
+        className={`fixed top-15 left-1/2 z-999 max-h-[90vh] w-[85%] md:w-[60%] xl:w-[40%] -translate-x-1/2 overflow-y-auto rounded-xl bg-slate-50 px-8 pb-6 transition-all duration-500 ease-in-out ${showAuth ? "translate-y-0" : "translate-y-4"}`}
       >
         {/* Auth Heading */}
         <div className="mt-10 w-full text-center">
