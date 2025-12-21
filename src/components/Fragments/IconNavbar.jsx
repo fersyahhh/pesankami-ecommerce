@@ -40,7 +40,7 @@ const IconNavbar = () => {
             className="flex items-center gap-1"
           >
             <div className="h-9 w-9 overflow-hidden rounded-full border-2 border-white">
-              <img className="h-full w-full" src={`${user.photoURL}`} alt="" />
+              <img className="h-full w-full object-cover" src={`${user.photoURL}`} alt="" />
             </div>
             <div>
               <ChevronDown size={17} />

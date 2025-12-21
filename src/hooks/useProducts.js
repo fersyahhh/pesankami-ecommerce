@@ -8,7 +8,6 @@ export function useProducts() {
   // Function set data to products (useState)
   useEffect(() => {
     getProducts((data) => {
-      console.log("Data diterima:", data);
       setProducts(data);
       setLoading(false);
     });
